@@ -64,3 +64,7 @@ p {
   clip-path: circle(60% at 99% 99%);
   background-color: blanchedalmond;
 }
+
+.drink-thumbnails {
+  display: flex;
+}
