@@ -56,8 +56,11 @@ p {
 }
 
 .img-bg {
-  clip-path: circle(50.2% at 99% 93%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(60% at 99% 99%);
   background-color: blanchedalmond;
-  height: 1000px;
-  width: 1000px;
 }
