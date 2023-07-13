@@ -36,23 +36,21 @@ nav {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
   width: 40%;
 }
 
-.content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.content .drink-description {
-  position: relative;
-  max-width: 600px;
+#blueberry-heaven {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+  height: 1000%;
+  width: 50%;
+  top: 15vh;
+  left: 45vw;
 }
 
 .img-bg {
@@ -61,10 +59,59 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  clip-path: circle(60% at 99% 99%);
+  clip-path: ellipse(48% 63% at 97% 98%);
   background-color: blanchedalmond;
+  z-index: -1;
 }
 
-.drink-thumbnails {
+#drink-thumbnails {
+  position: absolute;
+  top: 70vh;
+  left: 10vw;
   display: flex;
+  gap: 20px;
 }
+
+.thumbnail {
+  height: 100px;
+  transition: transform 10 ease;
+}
+
+.thumbnail:nth-child(n):hover {
+  transform: translateY(-15px);
+}
+
+footer {
+  position: absolute;
+  top: 95vh;
+  display: flex;
+  gap: 40px;
+  z-index: 1;
+  width: 100vw;
+}
+
+#footer-texts a:first-of-type {
+  padding-right: 25px;
+  border-right: 2px solid black;
+}
+
+#footer-texts a:last-of-type {
+  padding-left: 25px;
+}
+
+#footer-icons a {
+  margin-right: 05px;
+}
+
+/* .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .content .drink-description {
+  position: relative;
+  max-width: 600px;
+} */
