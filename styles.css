@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #75bf44;
+}
+
 #header-img {
   width: 50px;
   height: 50px;
@@ -17,40 +21,64 @@ form {
   height: 22px;
 }
 
+header {
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  /* width: 100%; */
+}
+
 nav {
   position: absolute;
   left: 50px;
   top: 10px;
   display: flex;
   justify-content: space-between;
-  width: 92vw;
+  width: 95vw;
 }
 
 .nav-left li,
 .nav-right li {
   display: inline-block;
   margin-right: 20px;
-  /* margin-top: 12px; */
   list-style: none;
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-size: 0.8em;
 }
 
 p {
-  width: 40%;
+  width: 60%;
+  margin: 0;
+  max-width: 450px;
+}
+
+/* .content {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+
+} */
+
+.content #drink-description {
+  position: relative;
+  max-width: 80%;
+  width: 100%;
+  top: 5vh;
 }
 
 #blueberry-heaven {
-  position: absolute;
+  position: relative;
+  top: -17vh;
+  left: 45vw;
   max-width: 500px;
   max-height: 500px;
-  height: 1000%;
-  width: 50%;
-  top: 15vh;
-  left: 45vw;
+  height: 50vh;
+  width: 50vw;
 }
 
 .img-bg {
@@ -60,8 +88,46 @@ p {
   height: 100%;
   width: 100%;
   clip-path: ellipse(48% 63% at 97% 98%);
-  background-color: blanchedalmond;
   z-index: -1;
+}
+
+@media (min-width: 1050px) {
+  #drink-description {
+    left: 10vw;
+    font-size: larger;
+  }
+
+  p {
+    width: 60%;
+  }
+
+  #blueberry-heaven {
+    left: 55vw;
+  }
+
+  nav {
+    font-size: large;
+  }
+}
+
+.blueberry-heaven {
+  background-color: #c2a7ee;
+}
+
+.choco-oreo {
+  background-color: #f1c9b7;
+}
+
+.strawberry {
+  background-color: #e7616d;
+}
+
+.honeydew {
+  background-color: #c4cc53;
+}
+
+.purple-taro {
+  background-color: #d2b0e4;
 }
 
 #drink-thumbnails {
@@ -84,10 +150,12 @@ p {
 footer {
   position: absolute;
   top: 95vh;
+  left: 2vw;
   display: flex;
   gap: 40px;
   z-index: 1;
-  width: 100vw;
+  width: 95vw;
+  /* background-color: var(--primary-color); */
 }
 
 #footer-texts a:first-of-type {
@@ -102,16 +170,3 @@ footer {
 #footer-icons a {
   margin-right: 05px;
 }
-
-/* .content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-/* .content .drink-description {
-  position: relative;
-  max-width: 600px;
-} */
