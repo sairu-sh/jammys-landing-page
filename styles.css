@@ -53,6 +53,11 @@ p {
   width: 60%;
   margin: 0;
   max-width: 450px;
+  font-size: larger;
+}
+
+h2 {
+  font-size: x-large;
 }
 
 /* .content {
@@ -71,9 +76,9 @@ p {
   top: 5vh;
 }
 
-#blueberry-heaven {
+.blueberry-heaven {
   position: relative;
-  top: -17vh;
+  top: -10vh;
   left: 45vw;
   max-width: 500px;
   max-height: 500px;
@@ -81,7 +86,7 @@ p {
   width: 50vw;
 }
 
-.img-bg {
+.blueberry-heavenBG {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,23 +115,23 @@ p {
   }
 }
 
-.blueberry-heaven {
+.blueberry-heavenBG {
   background-color: #c2a7ee;
 }
 
-.choco-oreo {
+.choco-oreoBG {
   background-color: #f1c9b7;
 }
 
-.strawberry {
+.strawberryBG {
   background-color: #e7616d;
 }
 
-.honeydew {
+.honeydewBG {
   background-color: #c4cc53;
 }
 
-.purple-taro {
+.purple-taroBG {
   background-color: #d2b0e4;
 }
 
