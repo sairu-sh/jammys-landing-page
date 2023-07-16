@@ -9,6 +9,8 @@
 #header-img {
   width: 50px;
   height: 50px;
+  margin-left: 5px;
+  border-radius: 5px;
 }
 
 video,
@@ -30,7 +32,7 @@ header {
 nav {
   position: absolute;
   left: 50px;
-  top: 10px;
+  top: 15px;
   display: flex;
   justify-content: space-between;
   width: 95vw;
@@ -46,14 +48,14 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  font-size: 0.8em;
+  font-size: 1.1em;
 }
 
 p {
   width: 60%;
   margin: 0;
-  max-width: 450px;
-  font-size: larger;
+  max-width: 600px;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -86,7 +88,7 @@ h2 {
   width: 50vw;
 }
 
-.blueberry-heavenBG {
+.img-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -94,6 +96,17 @@ h2 {
   width: 100%;
   clip-path: ellipse(48% 63% at 97% 98%);
   z-index: -1;
+}
+
+@media (max-width: 1315px) {
+  .img-bg {
+    clip-path: ellipse(40% 63% at 97% 98%);
+  }
+
+  .blueberry-heaven {
+    left: 60vw;
+    top: -15vh;
+  }
 }
 
 @media (min-width: 1050px) {
@@ -112,6 +125,16 @@ h2 {
 
   nav {
     font-size: large;
+  }
+}
+
+@media (max-width: 1235px) {
+  .blueberry-heaven {
+    /* top: -8vh;
+    left: 50vw; */
+    max-width: 400px;
+    max-height: 4000px;
+    overflow-y: hide;
   }
 }
 
@@ -173,5 +196,5 @@ footer {
 }
 
 #footer-icons a {
-  margin-right: 05px;
+  margin-right: 15px;
 }
