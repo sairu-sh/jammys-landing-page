@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "sunny-spells";
+  src: url("sunny-spells-font/SunnyspellsRegular-MV9ze.woff2") format("woff2");
 }
 
 :root {
@@ -11,11 +17,6 @@
   height: 50px;
   margin-left: 5px;
   border-radius: 5px;
-}
-
-video,
-form {
-  opacity: 0;
 }
 
 #location {
@@ -53,15 +54,17 @@ a {
 }
 
 #body {
-  width: 60%;
+  width: 80%;
   margin: 0;
-  max-width: 600px;
-  font-size: 1.5em;
+  max-width: 1000px;
+  font-size: 1.7em;
+  font-family: "sunny-spells";
 }
 
 #head {
   font-weight: bolder;
-  font-size: 3.5em;
+  font-size: 4.5em;
+  font-family: "sunny-spells";
 }
 
 /* .content {
@@ -85,8 +88,8 @@ a {
   position: relative;
   top: -10vh;
   left: 45vw;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 700px;
+  max-height: 800px;
   height: 50vh;
   width: 50vw;
 }
@@ -160,6 +163,15 @@ footer {
     max-width: 400px;
     max-height: 4000px;
   }
+
+  #head {
+    font-size: 2.5em;
+  }
+
+  #body {
+    width: 60%;
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -170,15 +182,6 @@ footer {
 
   .content #drink-description {
     margin-left: -20px;
-  }
-
-  #head {
-    font-size: 2.5em;
-  }
-
-  #body {
-    width: 60%;
-    font-size: 1.2em;
   }
 
   .blueberry-heaven {
@@ -203,10 +206,6 @@ footer {
 }
 
 @media (min-width: 1350) {
-  .blueberry-heaven {
-    left: 60vw;
-    top: -20vh;
-  }
 }
 
 .blueberry-heavenBG {
