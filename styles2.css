@@ -79,26 +79,6 @@ a {
   font-family: "sunny-spells";
 }
 
-.blueberry-heaven {
-  padding-top: 100px;
-  padding-right: 100px;
-  z-index: 1;
-  width: 700px;
-  height: 800px;
-  /* position: relative; */
-}
-
-.blueberry-heavenBG {
-  clip-path: circle(20% at 80% 65%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blueberryBG);
-  z-index: -1;
-}
-
 #drink-thumbnails {
   /* position: sticky;
   bottom: 250px;
