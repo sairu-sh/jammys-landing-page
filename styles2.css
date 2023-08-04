@@ -35,6 +35,7 @@ header {
   display: inline-block;
   margin-right: 20px;
   list-style: none;
+  margin-top: 5px;
 }
 
 #header-img {
@@ -56,35 +57,85 @@ header {
 a {
   text-decoration: none;
   color: black;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .content {
   display: flex;
-  justify-content: space-between;
-  margin: 50px;
+  /* justify-content: space-between; */
+  /* margin: 50px; */
   flex-wrap: wrap;
 }
 
 #head {
   font-weight: bolder;
-  font-size: 4.5em;
+  font-size: 1em;
   font-family: "sunny-spells";
+  max-width: 1000px;
+  /* width: 80%; */
+  margin-right: 0;
 }
 
 #body {
   width: 80%;
-  max-width: 1000px;
-  font-size: 1.7em;
+  max-width: 700px;
+  font-size: 0.4em;
   font-family: "sunny-spells";
+  font-weight: 200;
+}
+
+#drink-description {
+  flex: 1;
+  /* flex-basis: 0; */
+  padding-top: 50px;
+  padding-left: 7vw;
+  font-size: 50px;
+}
+
+#drinks-images {
+  flex: 0 0 50%;
+  /* flex-basis: 0; */
+}
+
+#drinks-images img {
+  /* padding-top: 50px; */
+  max-height: 650px;
+  max-width: 700px;
+  min-width: 400px;
+  min-height: 400px;
+  /* padding-right: 100px; */
+  object-fit: cover;
+}
+
+/* social icons */
+ul {
+  list-style: none;
+}
+
+#social-icons {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center; */
+  /* padding-right: 20px; */
+  /* justify-content: space-between; */
+}
+
+#social-icons img {
+  width: 30px;
+  height: 30px;
 }
 
 #drink-thumbnails {
-  /* position: sticky;
-  bottom: 250px;
-  left: 250px; */
   display: flex;
   gap: 20px;
+  margin-left: 40vw;
+  position: absolute;
+  top: 510px;
+  margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -93,6 +144,10 @@ a {
 }
 
 .thumbnail:nth-child(n):hover {
+  transform: translateY(-15px);
+}
+
+.active {
   transform: translateY(-15px);
 }
 
@@ -116,22 +171,50 @@ footer {
   gap: 40px;
   z-index: 1;
   width: 95vw;
+  margin-bottom: 15px;
   /* background-color: var(--primary-color); */
 }
 
 #footer-texts a:first-of-type {
   padding-right: 25px;
   border-right: 2px solid black;
+  margin-top: 5px;
 }
 
 #footer-texts a:last-of-type {
   padding-left: 25px;
 }
 
-#footer-icons a {
-  margin-right: 15px;
+#footer-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .form {
   display: none;
+}
+
+@media (max-width: 990px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    row-gap: 40px;
+  }
+
+  #drink-thumbnails {
+    position: static;
+  }
+
+  #drinks-images {
+    padding-left: 15vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #drinks-images {
+    margin: 0;
+    padding: 0;
+  }
 }

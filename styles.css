@@ -59,12 +59,14 @@ a {
   max-width: 1000px;
   font-size: 1.7em;
   font-family: "sunny-spells";
+  display: none;
 }
 
 #head {
   font-weight: bolder;
   font-size: 4.5em;
   font-family: "sunny-spells";
+  display: none;
 }
 
 /* .content {
@@ -85,13 +87,13 @@ a {
 }
 
 .blueberry-heaven {
-  position: relative;
-  top: -10vh;
+  position: absolute;
+  top: -50vh;
   left: 45vw;
   max-width: 700px;
   max-height: 800px;
-  height: 50vh;
-  width: 50vw;
+  height: 500px;
+  width: 500px;
 }
 
 .img-bg {
@@ -100,8 +102,9 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  clip-path: ellipse(48% 63% at 97% 98%);
+  clip-path: circle(18% at 77% 70%);
   z-index: -1;
+  background-color: #f1c9b7;
 }
 
 #drink-thumbnails {
@@ -129,7 +132,6 @@ footer {
   gap: 40px;
   z-index: 1;
   width: 95vw;
-  /* background-color: var(--primary-color); */
 }
 
 #footer-texts a:first-of-type {
@@ -146,9 +148,9 @@ footer {
 }
 
 @media (min-width: 1270px) {
-  .img-bg {
-    clip-path: ellipse(40% 63% at 97% 98%);
-  }
+  /* .img-bg {
+    clip-path: circle(18% at 77% 70%);
+  } */
 
   .blueberry-heaven {
     left: 60vw;

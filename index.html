@@ -6,11 +6,10 @@
     <title>Jammy's</title>
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main> 
-      <!-- <div class="img-bg blueberry-heavenBG"></div> -->
       <header id="header">
         <img src="images/logo.jpg" alt="logo" id="header-img"/>
         <nav id="nav-bar" class="nav-left">
@@ -33,43 +32,45 @@
           </ul>
         </nav>
       </header>
-      <div class="form">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" id="email" name="email" placeholder="abc@gmail.com" />
-          <input type="submit"  method="post" id="submit" /> 
-          <video src="videos/callStack - Made with Clipchamp.mp4" id="video" controls autoplay>hgd</video>
-        </form>
-      </div> 
-      <div class="content">
-        <div class="item" id="drink-description">
+      <div class="grid-container">
+        <div class="content">
+          <div class="item" id="drink-description">
           <p id="head" style="font-weight: bolder;"><span style="color: #75bf44; font-family: 'sunny-spells';">Jammy's</span> Bubble Tea: 
-            <br>Poppin'Flavors, 
-            Unforgettable Moments!
+            <br>Poppin'Flavors, Unforgettable Moments!
           </p>
           <p id="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perspiciatis quam? Debitis perspiciatis sapiente numquam cum tempora nesciunt, cumque, ipsam laboriosam ea, atque blanditiis officiis sit eveniet minima totam aliquid!</p>
+          </div>
+          <div class="item" id="drinks-images">
+         <img src="images/final_honeydew.png" alt="blueberry-heaven" class="blueberry-heaven" >
+          </div>
         </div>
-      <div class="item" id="drinks-images">
-         <img src="images/blueberry heaven_withBG.jpg" alt="blueberry-heaven" class="blueberry-heaven" >
+        <div id="drink-thumbnails">
+          <img src="images/strawberryTN-removebg-preview.png" alt="strawberry_pinkTN" id="strawberry_pinkTN" class="thumbnail">
+          <img src="images/blueberryTN-removebg-preview.png" alt="blueberry-heavenTN" id="blueberry-heavenTN" class="thumbnail active">
+          <img src="images/chocoTN-removebg-preview.png" alt="choco oreo" id="choco-oreoTN" class="thumbnail">
+          <img src="images/honeydewTN-removebg-preview.png" alt="honeydew" id="honeydewTN" class="thumbnail">
+          <img src="images/purpleTN-removebg-preview.png" alt="purple_taroTN" id="purple_taroTN" class="thumbnail">
+        </div> 
       </div>
-    </div>
-    <div id="drink-thumbnails">
-      <img src="images/strawberryTN-removebg-preview.png" alt="strawberry_pinkTN" id="strawberry_pinkTN" class="thumbnail">
-      <img src="images/blueberryTN-removebg-preview.png" alt="blueberry-heavenTN" id="blueberry-heavenTN" class="thumbnail">
-      <img src="images/chocoTN-removebg-preview.png" alt="choco oreo" id="choco-oreoTN" class="thumbnail">
-      <img src="images/honeydewTN-removebg-preview.png" alt="honeydew" id="honeydewTN" class="thumbnail">
-      <img src="images/purpleTN-removebg-preview.png" alt="purple_taroTN" id="purple_taroTN" class="thumbnail">
-    </div> 
+      <ul id="social-icons">
+        <li><a href=""><img src="images/instagram-logo.png" alt=""></a></li>
+        <li><a href=""><img src="images/facebook-logo.png" alt=""></a></li>
+        <li><a href=""><img src="images/tiktok-logo.png" alt="tiktok"></a></li>
+        <li><a href=""><img src="images/twitter-logo.png" alt=""></a></li>
+      </ul>
   </main>
+  <div class="form">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="abc@gmail.com" />
+      <input type="submit"  method="post" id="submit" /> 
+      <video src="videos/callStack - Made with Clipchamp.mp4" id="video" controls autoplay>hgd</video>
+    </form>
+  </div> 
   <footer>
     <div id="footer-texts">
       <a href="">TERMS & CONDITIONS</a>
       <a href="">COOKIES PREFERENCES</a>
     </div>     
-    <div id="footer-icons">
-      <a href=""><i class="fab fa-instagram"></i></i></a>
-      <a href=""><i class="fab fa-facebook"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-    </div>
   </footer>
   </body>
   
